@@ -3,39 +3,48 @@
 	<head>
 		<title>Contact Us</title>
 	</head>
-	<body>
-		<form action="contactInformation.html" method="POST"><br>
-			<table border="0" style="width:15%; text-align:right" align="left">
+	<body><br>
+		<form action="contactInformation.html" method="POST">
+			<table border="0" style="width:32%" align="left">
 				<tr>
-					<td>
-						First name:<br><br>
-						Last name:<br><br>
-						Email:<br><br>
-						Type of License:<br><br>
-						Reasons:<br><br>
-						Additional Information:<br><br>
-					</td>
+					<td style="text-align:right">First Name: <br><br></td>
+					<td style="text-align:left"><input type="text" name="firstName" style="width:100%"><br><br></td>
 				</tr>
-			</table>
-			<table border="0" style="width:25%" align="left">
 				<tr>
-					<td>
-						<input type="text" name="firstName"><br><br>
-						<input type="text" name="lastName"><br><br>
-						<input type="text" name="email"><br><br>
-						<input type="radio" name="answer" value="Business" checked>Business 
-							<input type="radio" name="answer" value="Personal">Personal<br><br>
-						<select name="reasons">
+					<td style="text-align:right">Last Name: <br><br></td>
+					<td style="text-align:left"><input type="text" name="lastName" style="width:100%"><br><br></td>
+				</tr>
+				<tr>
+					<td style="text-align:right">Email: <br><br></td>
+					<td style="text-align:left"><input type="text" name="email" style="width:100%"><br><br></td>
+				</tr>
+				<tr>
+					<td style="text-align:right">Type of License: <br><br></td>
+					<td style="text-align:left"><input type="radio" name="answer" value="Business" checked>Business 
+							<input type="radio" name="answer" value="Personal">Personal<br><br></td>
+				</tr>
+				<tr>
+					<td style="text-align:right">Reasons: <br><br></td>
+					<td style="text-align:left"><select name="reasons" style="width:100%">
 							<option value="selectAReason">Select a Reason</option>
 							<option value="softwareSupport">Software Support</option>
 							<option value="hardwareSupport">Hardware Support</option>
 							<option value="informationRequest">Information Request</option>
-						</select><br><br>
-						<textarea name="additionalInformation">
-						</textarea><br><br>
-						<input type="checkbox" name="readTermsofService" value="True">I have read the terms of service.<br><br>
-						<input type="submit" value="   Send Request   "><br><br>
-					</td>
+						</select><br><br></td>
+				</tr>
+				<tr>
+					<td style="text-align:right">Additional Information: <br><br></td>
+					<td style="text-align:left"><textarea name="additionalInformation" style="width:100%">
+						</textarea><br><br></td>
+				</tr>
+				<tr>
+					<td><br><br></td>
+					<td><input type="checkbox" name="readTermsofService" value="True">
+						I have read the terms of service.<br><br></td>
+				</tr>
+				<tr>
+					<td><br><br></td>
+					<td style="text-align:right"><input type="submit" value="    Send Request    "><br><br></td>
 				</tr>
 			</table>
 		</form>
