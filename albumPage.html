@@ -4,17 +4,18 @@
         <title>Album Page</title>	
     </head>
     <body>
+		<link href="albumStyles.css" rel="styleSheet" type="text/css">
 	
 		<table border="1" width="100%">
-			<caption><img src="http://musictrajectory.com/wp-content/uploads/2012/06/of-monsters-and-men-my-head-is-an-animal-album-cover1.jpg" 
+			<caption class="caption"><img src="http://musictrajectory.com/wp-content/uploads/2012/06/of-monsters-and-men-my-head-is-an-animal-album-cover1.jpg" 
 				alt="My Head is an Animal Album Cover" style="width:400px; height:400px;"></caption>
-			<caption><h1> My Head Is an Animal</h1></caption>
-			<caption><h2><a href="http://www.ofmonstersandmen.com" target="_blank">Of Monsters and Men</a></h2></caption>
-			<caption><h3>April 3, 2011</h3></caption>
+			<caption class="caption" style="font-size: 30px"><br>My Head Is an Animal</caption>
+			<caption class="caption"><a href="http://www.ofmonstersandmen.com" target="_blank">Of Monsters and Men</a></caption>
+			<caption class="caption" style="font-size: 20px">April 3, 2011<br><br></caption>
 		</table>
 		
 		<table border="0" style="width:90%; text-align:left" align="center">
-			<caption><h3>Band Members and Producers</h3></caption>
+			<caption class="caption"><br>Band Members and Producers</caption>
 			<tr>
 				<td><ul>
 					<li>Arnar Rósenkranz Hilmarsson – drums, percussion</li>
@@ -30,12 +31,20 @@
 			</tr>
 		</table>
 		
+		<style>
+			th {
+				background-color: grey;
+				font-size: 18px;
+				padding: 5px;
+			}
+		</style>
+		
 		<table border="1" style="width:90%; text-align:center" align="center">
-			<caption><h3>Tracks</h3></caption>
+			<caption class="caption">Tracks<br><br></caption>
 			<tr>
-				<th bgcolor="grey">Track #</th>	
-				<th bgcolor="grey">Track Title</th>	
-				<th bgcolor="grey">Track Length</th>
+				<th>Track #</th>	
+				<th>Track Title</th>	
+				<th>Track Length</th>
 			</tr>
 			<tr>
 				<td>1</td>
