@@ -4,11 +4,40 @@
 		<title>Restaurant-Contact Us</title>
 	</head>
 	<body>
-	<table border="1" width="100%">
-			<caption><h1>Tasteless Tonya's</h1></caption>
+	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
+	<div id="restaurant">
+	
+	<style>
+		.contactTable {
+			width:48%;
+			margin:26px 0px 26px 0px;
+		}
+		.contact {
+			text-align:right;
+			font-size:20px;
+			padding:3px 24px 3px 0px;
+			vertical-align:top;
+		}
+		.contactInputs {
+			text-align:left;
+		}
+		.contactBoxes {
+			width:100%;
+		}
+		#reasons {
+			font-family:cursive;
+		}
+		#sendRequest {
+			font-family:cursive;
+			font-size:14px;
+		}
+	</style>
+	
+<!--Restaurant Header-->
+	<table class="nameTable">
+			<caption class="restaurantName">Tasteless Tonya's</caption>
 		</table>
-		<p>
-		<table border="0" width="30%" align="left">
+		<table class="linksTable">
 			<tr>
 				<td>
 					<a href="restaurantHome.html" target="_blank">Home</a>
@@ -20,27 +49,29 @@
 					<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
 				</td>
 			</tr>
-		</table></p><br>
-		<p><table border="1" width="100%">
+		</table>
+		<table class="line">
 			<caption> </caption>
-		</table></p>
+		</table>
+
+<!--Contact Form-->
 			<form action="contactInformation.html" method="POST">
-			<table border="0" style="width:45%" align="left">
-				<tr colspan="2">
-					<td style="text-align:right"><h3>Name: </h3></td>
-					<td style="text-align:left"><input type="text" name="firstName" style="width:100%"></td>
+			<table class="contactTable">
+				<tr>
+					<td class="contact">Name: </td>
+					<td class="contactInputs"><input type="text" name="firstName" class="contactBoxes"></td>
 				</tr>
 				<tr>
-					<td style="text-align:right"><h3>Email: </h3></td>
-					<td style="text-align:left"><input type="text" name="lastName" style="width:100%"></td>
+					<td class="contact">Email: </td>
+					<td class="contactInputs"><input type="text" name="lastName" class="contactBoxes"></td>
 				</tr>
 				<tr>
-					<td style="text-align:right"><h3>Phone: </h3></td>
-					<td style="text-align:left"><input type="text" name="email" style="width:100%"></td>
+					<td class="contact">Phone: </td>
+					<td class="contactInputs"><input type="text" name="email" class="contactBoxes"></td>
 				</tr>
 				<tr>
-					<td style="text-align:right"><h3>Reasons for Inquiry: </h3></td>
-					<td style="text-align:left"><select name="reasons" style="width:100%">
+					<td class="contact">Reasons for Inquiry: </td>
+					<td class="contactInputs"><select name="reasons" class="contactBoxes" id="reasons">
 							<option value="selectAReason">Catering</option>
 							<option value="softwareSupport">Private Party</option>
 							<option value="hardwareSupport">Feedback</option>
@@ -48,17 +79,17 @@
 						</select></td>
 				</tr>
 				<tr>
-					<td style="text-align:right" valign="top"><h3>Additional Information: </h3></td>
-					<td style="text-align:left"><br><textarea name="additionalInformation" style="width:100%" rows="6">
+					<td class="contact">Additional Information: </td>
+					<td class="contactInputs"><textarea name="additionalInformation" class="contactBoxes" rows="7">
 						</textarea></td>
 				</tr>
 				<tr>
-					<td style="text-align:right"><h3>Have you been to the restaurant? </h3></td>
-					<td style="text-align:left"><input type="radio" name="answer" value="No" checked>No 
+					<td class="contact">Have you been to the restaurant? </td>
+					<td class="contactInputs"><input type="radio" name="answer" value="No" checked>No 
 							<input type="radio" name="answer" value="Yes">Yes</td>
 				</tr>
 				<tr>
-					<td style="text-align:right"><h3>Best days to contact you:</h3></td>
+					<td class="contact">Best days to contact you: </td>
 					<td><input type="checkbox" name="bestDaysToContact" value="Monday"> M
 						<input type="checkbox" name="bestDaysToContact" value="Tuesday"> T
 						<input type="checkbox" name="bestDaysToContact" value="Wednesday"> W
@@ -67,15 +98,19 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td style="text-align:right"><input type="submit" value=" Send Request "></td>
+					<td class="contact"><input type="submit" value=" Send Request " id="sendRequest"></td>
 				</tr>
 			</table>
 		</form>
-		<p><table border="1" width="100%">
-			<caption><br></caption>
-		</table></p>
-		<table border="0" width="100%">
-			<caption><h4>13 Sweetness Ln. Foodville, MA 01934</h4><h4>843-728-0941</h4></caption>
+		
+<!--Restaurant Footer-->
+		<table class="line">
+			<caption> </caption>
+		</table><br>
+		<table class="contactInfoTable">
+			<caption class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</caption>
+			<caption class="contactInfo">843-728-0941</caption>
 		</table>
+	</div>
 	</body>
 </html>

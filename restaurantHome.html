@@ -4,11 +4,14 @@
 		<title>Restaurant-Home</title>
 	</head>
 	<body>
-	<table border="1" width="100%">
-			<caption><h1>Tasteless Tonya's</h1></caption>
+	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
+	<div id="restaurant">
+	
+<!--Restaurant Header-->
+	<table class="nameTable">
+			<caption class="restaurantName">Tasteless Tonya's</caption>
 		</table>
-		<p>
-		<table border="0" width="30%" align="left">
+		<table class="linksTable">
 			<tr>
 				<td>
 					<a href="restaurantHome.html" target="_blank">Home</a>
@@ -20,26 +23,36 @@
 					<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
 				</td>
 			</tr>
-		</table></p><br>
-		<p><table border="1" width="100%">
+		</table>
+		<table class="line">
 			<caption> </caption>
-		</table></p>
-		<table border="1" width="100%">
-			<caption><p><img src="http://weknowyourdreams.com/images/restaurant/restaurant-05.jpg" 
-				alt="Restaurant Picture" style="width:400px; height:150px;"></p></caption>
-			<caption><table border="1" width="32%">
+		</table>
+
+<!--Home page info-->
+		<table style="width:100%">
+			<caption style="margin:12px"><img src="http://weknowyourdreams.com/images/restaurant/restaurant-05.jpg" 
+				alt="Restaurant Picture" style="width:400px; height:150px;"></caption>
+			<caption>
+			<table style="border-width:thin; border-style:solid; width:32%; padding:8px 8px 70px 8px; margin-bottom:14px;">
 				<tr>
 					<td>
 						Restaurant Description<br>
 						Tired of food that tastes good? Tasteless Tonya's offers the most bland cuisine money can buy!
 							And don't forget to pick up one of our world-famous breath mints on your way out, crafted from all natural,
-							gluten-free air imported straight from Mount Shui-gua to your mouth.<br><br><br>
+							gluten-free air imported straight from Mount Shui-gua to your mouth.
 					</td>
 				</tr>
-			</table><br>
+			</table>
 		</table>
-		<table border="0" width="100%">
-			<caption><h4>13 Sweetness Ln. Foodville, MA 01934</h4><h4>843-728-0941</h4></caption>
+
+<!--Restaurant Footer-->
+		<table class="line">
+			<caption> </caption>
+		</table><br>
+		<table class="contactInfoTable">
+			<caption class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</caption>
+			<caption class="contactInfo">843-728-0941</caption>
 		</table>
+	</div>
 	</body>
 </html>

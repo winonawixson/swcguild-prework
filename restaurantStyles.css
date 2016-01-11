@@ -1,0 +1,72 @@
+#restaurant {
+	font-family:cursive;
+}
+
+.nameTable {
+	border: 1px;
+	border-style: solid;
+	width: 100%;
+}
+
+.restaurantName {
+	font-size: 36px;
+	font-weight: bold;
+	padding: 18px;
+}
+
+.linksTable {
+	width: 30%;
+	padding: 10px;
+}
+
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: underline;
+	
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a:active {
+	color: green;
+	text-decoration: underline;
+}
+
+.line {
+	border: 1px;
+	border-style: solid;
+	width: 100%;
+}
+
+.contactInfoTable {
+	width: 100%;
+}
+
+.contactInfo {
+	font-size: 16px;
+	padding: 5px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

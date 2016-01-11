@@ -4,11 +4,28 @@
 		<title>Restaurant-Menu</title>
 	</head>
 	<body>
-	<table border="1" width="100%">
-			<caption><h1>Tasteless Tonya's</h1></caption>
+	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
+	<div id="restaurant">
+	
+	<style>
+		.menu {
+			width:100%;
+			text-align:center;
+			margin-bottom: 150px;
+		}
+		
+		#menuItem {
+			font-size:21px;
+			font-weight: bold;
+			padding: 10px;
+		}
+	</style>
+	
+<!--Restaurant Header-->
+	<table class="nameTable">
+			<caption class="restaurantName">Tasteless Tonya's</caption>
 		</table>
-		<p>
-		<table border="0" width="30%" align="left">
+		<table class="linksTable">
 			<tr>
 				<td>
 					<a href="restaurantHome.html" target="_blank">Home</a>
@@ -20,14 +37,16 @@
 					<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
 				</td>
 			</tr>
-		</table></p><br>
-		<p><table border="1" width="100%">
+		</table>
+		<table class="line">
 			<caption> </caption>
-		</table></p>
-		<table border="0" style="width:100%; text-align:center">
+		</table>
+
+<!--Menu Section-->
+		<table class="menu">
 			<tr>
 				<td>
-					<h3>Burger and Fries</h3>
+					<div id="menuItem">Burger and Fries</div>
 					An American Classic!<br>
 					Your choice - with or without cheese<br>
 					Pickle, onion, tomato, and lettuce<br>
@@ -36,7 +55,7 @@
 					$7.95
 				</td>
 				<td>
-					<h3>Hot Dog and Chips</h3>
+					<div id="menuItem">Hot Dog and Chips</div>
 					An Summer Classic!<br>
 					Your choice - white or wheat bun<br>
 					Relish, mustard, and ketchup<br>
@@ -44,7 +63,7 @@
 					$7.95
 				</td>
 				<td>
-					<h3>Italian Sausage and Peppers</h3>
+					<div id="menuItem">Italian Sausage and Peppers</div>
 					An All-Time Favorite!!<br>
 					Your choice - mild or spicy<br>
 					Cole Slaw<br>
@@ -54,7 +73,7 @@
 			</tr>
 			<tr>
 				<td>
-					<h3>Tenderloin Sandwich and Chips</h3>
+					<div id="menuItem">Tenderloin Sandwich and Chips</div>
 					Really Hits the Spot!<br>
 					Plain or Sesame Seed Bun<br>
 					Pickle, onion, tomato, and lettuce<br>
@@ -62,7 +81,7 @@
 					$8.95
 				</td>
 				<td>
-					<h3>House Salad</h3>
+					<div id="menuItem">House Salad</div>
 					On the Lighter Side<br>
 					Your choice - with or without cheese<br>
 					Iceberg lettuce, tomatoes, peppers<br>
@@ -71,7 +90,7 @@
 					$6.95
 				</td>
 				<td>
-					<h3>Brisket Sandwich and Fries</h3>
+					<div id="menuItem">Brisket Sandwich and Fries</div>
 					A Taste of Texas!<br>
 					Smoked Brisket on thick-cut Texas<br>
 					Toast<br>
@@ -82,11 +101,15 @@
 				</td>
 			</tr>
 		</table>
-		<p><table border="1" width="100%">
-			<caption><br><br><br></caption>
-		</table></p>
-		<table border="0" width="100%">
-			<caption><h4>13 Sweetness Ln. Foodville, MA 01934</h4><h4>843-728-0941</h4></caption>
+		
+<!--Restaurant Footer-->
+		<table class="line">
+			<caption> </caption>
+		</table><br>
+		<table class="contactInfoTable">
+			<caption class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</caption>
+			<caption class="contactInfo">843-728-0941</caption>
 		</table>
+	</div>
 	</body>
 </html>
