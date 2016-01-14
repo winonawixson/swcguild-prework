@@ -2,9 +2,30 @@
 	font-weight: bold;
 	font-size: 24px;
 }
+a {
+	color: blue;
+	text-decoration:none;
+}
+
+a:visited {
+	color: blue;	
+	text-decoration:none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+	background-color:pink; 
+}
+
+a:active {
+	color: blue;
+	text-decoration:none;
+}
 
 td {
 	padding: 5px;
+	font-style:italic;
 }
 .albumImage {
 	background-image: url("http://musictrajectory.com/wp-content/uploads/2012/06/of-monsters-and-men-my-head-is-an-animal-album-cover1.jpg");
