@@ -26,19 +26,20 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: green;
 	text-decoration: underline;
 	
 }
 
 a:hover {
-	color: red;
+	color: blue;
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 a:active {
-	color: green;
-	text-decoration: underline;
+	color: blue;
+	text-decoration:none;
 }
 
 .line {
