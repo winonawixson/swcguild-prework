@@ -1,6 +1,7 @@
 .caption {
 	font-weight: bold;
 	font-size: 24px;
+	text-align: center;
 }
 a {
 	color: blue;
@@ -31,7 +32,6 @@ td {
 	background-image: url("http://musictrajectory.com/wp-content/uploads/2012/06/of-monsters-and-men-my-head-is-an-animal-album-cover1.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position: center;
 	height:400px;
 	width:400px;
 }

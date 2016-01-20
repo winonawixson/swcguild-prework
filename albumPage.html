@@ -2,27 +2,30 @@
 <html>
     <head>
         <title>Album Page</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body>
 		<link href="albumStyles.css" rel="styleSheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet' type='text/css'>
+		
 		<style>
 			th {
 				background-color: grey;
+				text-align: center;
 				font-size: 18px;
 				padding: 5px;
 			}
 		</style>
 		
-		<table border="1" width="100%">
-			<caption><div class="albumImage"> </div></caption>
-			<caption class="caption" style="font-size:30px; font-family:'Jaldi', sans-serif;">My Head Is an Animal</caption>
-			<caption class="caption"><a href="http://www.ofmonstersandmen.com" target="_blank">Of Monsters and Men</a></caption>
-			<caption class="caption" style="font-size: 20px">April 3, 2011<br><br></caption>
-		</table>
+		<div class="albumImage img-circle center-block"> </div><br>
+		<div class="caption" style="font-size:30px; font-family:'Jaldi', sans-serif;">My Head Is an Animal</div>
+		<div class="caption"><a href="http://www.ofmonstersandmen.com" target="_blank">Of Monsters and Men</a></div>
+		<div class="caption" style="font-size: 20px">April 3, 2011<br><br></div>
+		<hr style="height:1px; border:none; background-color:#333;">
 		
 		<table border="0" style="width:90%; text-align:left" align="center">
-			<caption class="caption" style="font-family:'Jaldi', sans-serif; "><br>Band Members and Producers</caption>
+			<caption class="caption" style="font-family:'Jaldi', sans-serif;">Band Members and Producers</caption>
 			<tr>
 				<td style="font-style:italic"><ul>
 					<li>Arnar Rósenkranz Hilmarsson – drums, percussion</li>
@@ -37,9 +40,10 @@
 				</ul></td>
 			</tr>
 		</table>
-		
-		<table border="1" style="width:90%; text-align:center; background-color:mistyRose;" align="center">
-			<caption class="caption">Tracks<br><br></caption>
+	
+	<div class="table-responsive">
+		<table class="table table-striped" border="1" style="width:90%; text-align:center; background-color:mistyRose;" align="center">
+			<caption class="caption">Tracks<br></caption>
 			<tr>
 				<th>Track #</th>	
 				<th>Track Title</th>	
@@ -106,5 +110,6 @@
 				<td>4:52</td>
 			</tr>		
 		</table>
+	</div>
     </body>
 </html>
