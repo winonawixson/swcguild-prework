@@ -5,7 +5,9 @@
 	</head>
 	<body>
 	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>	
+	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 	
 	<style>
 		.contactTable {
@@ -35,29 +37,24 @@
 	</style>
 	
 <!--Restaurant Header-->
-	<table class="nameTable">
-			<caption class="restaurantName">Tasteless Tonya's</caption>
-		</table>
+	<div class="restaurantName">Tasteless Tonya's</div>
+	<hr style="height:1px; border:none; background-color:#333;">
+		
 	<div id="restaurant">
-		<table class="linksTable">
-			<tr>
-				<td>
-					<a href="restaurantHome.html" target="_blank">Home</a>
-				</td>
-				<td>
-					<a href="restaurantMenu.html" target="_blank">Menu</a>
-				</td>
-				<td>
-					<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
-				</td>
-			</tr>
-		</table>
-		<table class="line">
-			<caption> </caption>
-		</table>
+		<div class="linksTable"><ul class="nav nav-tabs">
+			<li role="presentation"><a href="restaurantHome.html" target="_blank"><span class="glyphicon glyphicon-home"> </span></a></li>
+			<li role="presentation"><a href="restaurantMenu.html" target="_blank">Menu</a></li>
+			<li role="presentation" class="active"><a href="restaurantContactUs.html" target="_blank">Contact Us</a></li>
+		</ul></div>
+		
+	<div class="jumbotron" style="text-align:center; color:crimson;">
+		<h2>We're opening a new location!!</h1>
+		<h3>Foodville, NY - June 2016</h3>
+	</div>
 
 <!--Contact Form-->
-			<form action="contactInformation.html" method="POST">
+	<hr style="height:1px; border:none; background-color:#333;">
+		<form action="contactInformation.html" method="POST">
 			<table class="contactTable">
 				<tr>
 					<td class="contact">Name: </td>
@@ -109,11 +106,9 @@
 		</table>
 		
 <!--Restaurant Footer-->
-		<br>
-		<table class="contactInfoTable">
-			<caption class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</caption>
-			<caption class="contactInfo">843-728-0941</caption>
-		</table>
+	<hr style="height:1px; border:none; background-color:#333;">
+	<div class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</div>
+	<div class="contactInfo">843-728-0941</div>
 	</div>
 	</body>
 </html>

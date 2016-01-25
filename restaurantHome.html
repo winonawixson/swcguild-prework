@@ -6,57 +6,44 @@
 	<body>
 	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 	
 <!--Restaurant Header-->
-	<table class="nameTable">
-			<caption class="restaurantName">Tasteless Tonya's</caption>
-		</table>
+	<div class="restaurantName">Tasteless Tonya's</div>
+	<hr style="height:1px; border:none; background-color:#333;">
+		
 	<div id="restaurant">
-		<table class="linksTable">
-			<tr>
-				<td>
-					<a href="restaurantHome.html" target="_blank">Home</a>
-				</td>
-				<td>
-					<a href="restaurantMenu.html" target="_blank">Menu</a>
-				</td>
-				<td>
-					<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
-				</td>
-			</tr>
-		</table>
-		<table class="line">
-			<caption> </caption>
-		</table>
+		<div class="linksTable"><ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="restaurantHome.html" target="_blank"><span class="glyphicon glyphicon-home"> 
+				</span></a></li>
+			<li role="presentation"><a href="restaurantMenu.html" target="_blank">Menu</a></li>
+			<li role="presentation"><a href="restaurantContactUs.html" target="_blank">Contact Us</a></li>
+		</ul></div>
+		
+	<div class="jumbotron" style="text-align:center; color:crimson;">
+		<h2>We're opening a new location!!</h1>
+		<h3>Foodville, NY - June 2016</h3>
+	</div>
 
 <!--Home page info-->
 	<div style="background-color:#ffffc3">
-		<table style="width:100%">
-			<caption style="margin:12px"><img src="http://weknowyourdreams.com/images/restaurant/restaurant-05.jpg" 
-				alt="Restaurant Picture" style="width:400px; height:150px;"></caption>
-			<caption>
-			<table style="border-width:thin; border-style:solid; width:32%; padding:8px 8px 70px 8px; margin-bottom:14px;">
-				<tr>
-					<td>
-						Restaurant Description<br>
-						Tired of food that tastes good? Tasteless Tonya's offers the most bland cuisine money can buy!
-							And don't forget to pick up one of our world-famous breath mints on your way out, crafted from all natural,
-							gluten-free air imported straight from Mount Shui-gua to your mouth.
-					</td>
-				</tr>
-			</table>
-		</table>
-		<table class="line">
-			<caption> </caption>
-		</table>
-		</div>
+		<hr style="height:1px; border:none; background-color:#333;">
+			<div style="margin:12px;"><img class="center-block" src="http://weknowyourdreams.com/images/restaurant/restaurant-05.jpg" 
+				alt="Restaurant Picture" style="width:400px; height:150px;">
+			</div>
+			<div class="center-block" style="border-width:thin; border-style:solid; width:32%; padding:8px 8px 70px 8px; margin-bottom:14px;">
+				Restaurant Description<br>
+				Tired of food that tastes good? Tasteless Tonya's offers the most bland cuisine money can buy!
+					And don't forget to pick up one of our world-famous breath mints on your way out, crafted from all natural,
+					gluten-free air imported straight from Mount Shui-gua to your mouth.
+			</div>
+		<hr style="height:1px; border:none; background-color:#333;">
+	</div>
 		
 <!--Restaurant Footer-->
-		<br>
-		<table class="contactInfoTable">
-			<caption class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</caption>
-			<caption class="contactInfo">843-728-0941</caption>
-		</table>
+	<div class="contactInfo">13 Sweetness Ln. Foodville, MA 01934</div>
+	<div class="contactInfo">843-728-0941</div>
 	</div>
 	</body>
 </html>

@@ -2,21 +2,16 @@
 	font-family:cursive;
 }
 
-.nameTable {
-	border: 1px;
-	border-style: solid;
-	width: 100%;
-}
-
 .restaurantName {
 	font-family:'Coming Soon', cursive;
 	font-size: 42px;
 	font-weight: bold;
-	padding: 18px;
+	padding-top: 18px;
+	text-align:center;
 }
 
 .linksTable {
-	width: 30%;
+	width: 100%;
 	padding: 10px;
 }
 
@@ -42,19 +37,10 @@ a:active {
 	text-decoration:none;
 }
 
-.line {
-	border: 1px;
-	border-style: solid;
-	width: 100%;
-}
-
-.contactInfoTable {
-	width: 100%;
-}
-
 .contactInfo {
 	font-size: 16px;
 	padding: 5px;
+	text-align:center;
 }
 	
 	
