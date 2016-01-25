@@ -4,10 +4,12 @@
 		<title>Restaurant-Menu</title>
 	</head>
 	<body>
-	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-
+	<link href="restaurantStyles.css" rel="styleSheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<noscript><p>Please enable JavaScript in your browser for better use of the website.</p></noscript>
 	
 	<style>
 		.menu {
@@ -46,10 +48,48 @@
 			<li role="presentation"><a href="restaurantContactUs.html" target="_blank">Contact Us</a></li>
 		</ul></div>
 		
-	<div class="jumbotron" style="text-align:center; color:crimson;">
-		<h2>We're opening a new location!!</h1>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+		<div class="jumbotron" style="text-align:center; color:crimson;">
+		<h2>We're opening a new location!!</h2>
 		<h3>Foodville, NY - June 2016</h3>
+		</div>
 	</div>
+
+    <div class="item">
+		<div class="jumbotron" style="text-align:center; color:crimson;">
+			<h2>Seasonal menu coming soon!!</h2>
+			<h3>Special options for a special season!</h3>
+		</div>
+	</div>
+
+    <div class="item">
+		<div class="jumbotron" style="text-align:center; color:crimson;">
+		<h2>Drink of the Month</h2>
+		<h3>SG Special Brew</h3>
+		</div>
+	</div>
+</div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <!--Menu Section-->
 	<hr style="height:1px; border:none; background-color:#333;">
