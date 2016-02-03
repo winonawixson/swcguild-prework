@@ -1,0 +1,41 @@
+#title {
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.inputTable {
+	width:300px;
+}
+
+.button {
+	width:150px;
+	height:50px;
+	border:1px;
+	border-style:solid;
+	border-width:thin;
+	padding:10px;
+}
+
+.buttonDiv {
+	text-align:center;
+}
+
+.playAgain {
+	text-align:center;
+}
+
+.resultsTable {
+	width:300px;
+	border:2px solid white;
+	padding:20px;
+	font-size:18px;
+}
+
+.resultsTitle {
+	text-align:center;
+	font-size:26px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:black; 
+}

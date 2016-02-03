@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Sevens</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="luckySevensStyles.css" rel="styleSheet" type="text/css">
+	
+	<script type="text/javascript"> 
+	
+		var dice1;
+		var dice2;
+		var playerMoney;
+		var totalRolls;
+		var maxMoney;
+		var rollsAtMaxMoney;
+		
+		function hideResults(){
+			document.getElementById("results").style.visibility = "hidden";
+		}
+		
+		function playGame(){
+		
+			var startingBet = document.getElementById("startingBet").value;
+			if(startingBet<1) {
+				alert("Please enter a bet greater than $1")
+			} else {
+			
+			playerMoney=startingBet;
+			totalRolls=0;
+			maxMoney=0;
+		
+			while(playerMoney>0){
+				dice1=parseInt((Math.random() * (6 - 1 + 1)), 10) + 1;
+				dice2=parseInt((Math.random() * (6 - 1 + 1)), 10) + 1;
+				
+				if(dice1+dice2==7) {
+					playerMoney=playerMoney+4;
+					totalRolls++;
+				} else {
+					playerMoney=playerMoney-1;
+					totalRolls++;
+				}
+				
+				if(playerMoney>maxMoney){
+					maxMoney=playerMoney;
+					rollsAtMaxMoney=totalRolls;
+				}
+			}
+			
+			document.getElementById("play").innerHTML = "Play Again";
+			document.getElementById("results").style.visibility = "visible"
+			
+			document.getElementById("startingBetTable").innerHTML = startingBet;
+			document.getElementById("totalRolls").innerHTML = totalRolls;
+			document.getElementById("maxMoney").innerHTML = maxMoney;
+			document.getElementById("rollsAtMaxMoney").innerHTML = rollsAtMaxMoney;
+			}
+		}
+	</script>
+
+</head>
+<body onload="hideResults();">
+
+	<div id="title">Lucky Sevens</div><br><br>
+
+	<form action="startingBet.html" method="POST">
+		<table class="inputTable" align="center">
+			<tr>
+				<td style="font-size:16px">Starting Bet: </td>
+				<td><input type="number" id="startingBet" width="75%" placeholder="$0.00"> </td>
+			</tr>	
+		</table>
+	</form> <br><br>
+	
+	<div class="buttonDiv">
+		<button class="btn button" id="play" onclick="playGame();">Play</button>
+	</div>
+	
+	<div id="results">
+	<br><br>
+	<div class="table-responsive" style="background-color:#ededed; width:350px; margin:auto;">
+		<table class="table table-bordered resultsTable" align="center" style="border-color:white;">
+			<caption class="resultsTitle">Results</caption>
+			<tr style="background-color:lightGrey; height:70px;">
+				<th style="border: 2px solid white">Starting Bet</th>
+				<th style="border: 2px solid white; width:20px">$<span id="startingBetTable"></span>.00</th>
+			</tr>
+			<tr style="height:70px;">
+				<td style="border:2px solid white">Total Rolls Before Going Broke</td>
+				<td id="totalRolls" style="border: 2px solid white"> </td>
+			</tr>
+			<tr style="height:70px;">
+				<td style="border:2px solid white">Highest Amount Won</td>
+				<td style="border:2px solid white">$<span id="maxMoney"></span>.00</td>
+			</tr>
+			<tr style="height:70px;">
+				<td style="border: 2px solid white">Roll Count at Highest Amount Won</td>
+				<td id="rollsAtMaxMoney" style="border: 2px solid white"> </td>
+			</tr>
+		</table>
+	</div>
+	</div>
+
+
+</body>
+</html>
